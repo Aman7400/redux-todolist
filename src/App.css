@@ -10,12 +10,39 @@ body {
 .App {
   padding: 5rem;
   width: 100%;
+  flex-direction: column;
   min-height: 100vh;
   background-color: #00deb9;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+  }
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.clicked {
+  text-decoration: line-through;
+
+  text-decoration-color: grey;
+}
+.clicked:hover {
+  text-decoration-color: white;
+}
+.dlt-btn,
+.add-btn {
+  color: #00deb9;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.clicked:hover .dlt-btn {
+  color: #fff;
+}
+.add-btn:hover {
+  background-color: #00deb9;
+  color: #fff;
 }
