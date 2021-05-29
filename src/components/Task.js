@@ -43,7 +43,7 @@ const Task = ({ id, title }) => {
     >
       <Title>
         {title}
-        {id}
+       
       </Title>
       {click ? (
         <span className="center  dlt-btn " style={{ marginLeft: "auto" }}>
